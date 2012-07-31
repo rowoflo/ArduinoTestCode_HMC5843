@@ -97,7 +97,7 @@
 		D7441BA614C12F490060B129 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Georgia Institute Technology";
 			};
 			buildConfigurationList = D7441BA914C12F490060B129 /* Build configuration list for PBXProject "HMC5843" */;

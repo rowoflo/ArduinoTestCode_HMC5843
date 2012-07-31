@@ -98,8 +98,8 @@ void readData() {
     delay(100);
     
     int x, y, z;
-    hmc.normalized(x, y, z);
-    //hmc.raw( x, y, z);
+    //hmc.normalized(x, y, z);
+    hmc.raw( x, y, z);
     Serial.print(x);
     Serial.print(", ");
     Serial.print(y);
