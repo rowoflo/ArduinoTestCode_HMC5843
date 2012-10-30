@@ -51,6 +51,17 @@
 			name = Clean;
 			productName = Clean;
 		};
+		D7E5B5651620BAE700746A32 /* Upload Nano */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D7E5B5671620BAE700746A32 /* Build configuration list for PBXAggregateTarget "Upload Nano" */;
+			buildPhases = (
+				D7E5B5661620BAE700746A32 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Upload Nano";
+			productName = "Upload Uno";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +125,7 @@
 				D7441BAC14C12F490060B129 /* Compile */,
 				D7441BAE14C12F490060B129 /* Upload Duemilanove */,
 				D7441BB014C12F490060B129 /* Upload Uno */,
+				D7E5B5651620BAE700746A32 /* Upload Nano */,
 				D7441BB214C12F490060B129 /* Clean */,
 			);
 		};
@@ -171,6 +183,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake clean\nexit 0";
+		};
+		D7E5B5661620BAE700746A32 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo '===== BUILDING FILE FOR TARGET UPLOAD ====='\ncd $PROJECT_DIR/$PROJECT_NAME\nmake BOARD=\"nano328\" upload\nexit 0";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -243,6 +268,20 @@
 			};
 			name = Release;
 		};
+		D7E5B5681620BAE700746A32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Upload Uno copy";
+			};
+			name = Debug;
+		};
+		D7E5B5691620BAE700746A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Upload Uno copy";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -287,6 +326,15 @@
 			buildConfigurations = (
 				D7441BC414C12F490060B129 /* Debug */,
 				D7441BC514C12F490060B129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7E5B5671620BAE700746A32 /* Build configuration list for PBXAggregateTarget "Upload Nano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7E5B5681620BAE700746A32 /* Debug */,
+				D7E5B5691620BAE700746A32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
